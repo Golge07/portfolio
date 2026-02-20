@@ -173,10 +173,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
             <div className="card p-7 md:p-12 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              <StatCard number="5+" label="Yıl Deneyim" />
-              <StatCard number="40+" label="Tamamlanan Proje" />
-              <StatCard number="20+" label="Mutlu Müşteri" />
-              <StatCard number="∞" label="Kahve Bardağı" />
+              <StatCard number="3+" label="Yıl Deneyim" />
+              <StatCard number="3+" label="Tamamlanan Proje" />
+              <StatCard number="3+" label="Mutlu Müşteri" />
             </div>
           </ScrollReveal>
         </div>

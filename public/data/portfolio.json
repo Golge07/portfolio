@@ -1,0 +1,166 @@
+{
+  "personalInfo": {
+    "name": "Eren Bulut",
+    "role": "SR. Full Stack Developer",
+    "location": "Antalya, Türkiye",
+    "email": "erenbulut0766@outlook.com",
+    "phone": "+90 555 083 0766",
+    "website": "https://185.255.94.213/",
+    "githubUrl": "https://github.com/Golge07",
+    "linkedinUrl": "#",
+    "cvPdfUrl": "#"
+  },
+  "projectFilters": [
+    "Tümü",
+    "Full Stack",
+    "Frontend",
+    "Backend",
+    "Paketler"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "VIP Transfer",
+      "category": "Full Stack",
+      "year": "2026",
+      "desc": "Şoförlü VIP transfer süreçlerini uçtan uca yöneten; rezervasyon, araç-personel atama, operasyon takibi ve takvim planlamasını tek panelden sağlayan yönetim sistemi.",
+      "tags": [
+        "Next.js",
+        "Nest.js",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Redux"
+      ],
+      "featured": true,
+      "accentColor": "#6c63ff",
+      "link": "http://185.255.94.213:3000/"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Stajyer Web Geliştirici",
+      "company": "KRİSTAL ENDÜSTRİYEL",
+      "period": "2022 - 2023",
+      "desc": "Web geliştirme süreçlerine stajyer olarak dahil oldum. React, Angular ve HTML kullanarak şirket web sitesi üzerinde frontend geliştirme çalışmaları yaptım. Temel frontend ve backend geliştirme becerileri kazandım.",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "AWS",
+        "PostgreSQL",
+        "Docker"
+      ]
+    },
+    {
+      "role": "Full Stack Geliştirme ve Gömülü Yazılım",
+      "company": "MEK Car Wash",
+      "period": "2026",
+      "desc": "Tauri ve React Native kullanarak masaüstü ve mobil uygulamalar geliştirdim. C++ ile makine yazılımları üzerinde çalışarak donanım-yazılım entegrasyonu alanında deneyim kazandım.",
+      "tags": [
+        "React",
+        "React Native",
+        "Tauri",
+        "C++",
+        "Node.js",
+        "Fastify.js"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bilişim Teknolojileri Alanı - Yazılım Geliştirme",
+      "school": "Atatürk Mesleki ve Teknik Anadolu Lisesi",
+      "period": "2019 - 2023",
+      "desc": "Microsoft Forms ile form uygulamaları geliştirme ve MSSQL veritabanı yönetimi ile yazılıma adım attım."
+    }
+  ],
+  "skills": [
+    {
+      "label": "React",
+      "level": 90
+    },
+    {
+      "label": "TypeScript",
+      "level": 90
+    },
+    {
+      "label": "Next.js",
+      "level": 80
+    },
+    {
+      "label": "Node.js",
+      "level": 75
+    },
+    {
+      "label": "Express",
+      "level": 95
+    },
+    {
+      "label": "Fastify",
+      "level": 95
+    },
+    {
+      "label": "NestJS",
+      "level": 95
+    },
+    {
+      "label": "Angular",
+      "level": 65
+    },
+    {
+      "label": "React Native",
+      "level": 70
+    },
+    {
+      "label": "Tauri",
+      "level": 65
+    },
+    {
+      "label": "Expo",
+      "level": 70
+    },
+    {
+      "label": "PostgreSQL",
+      "level": 80
+    },
+    {
+      "label": "MySQL",
+      "level": 80
+    },
+    {
+      "label": "MSSQL",
+      "level": 95
+    },
+    {
+      "label": "Redux",
+      "level": 95
+    },
+    {
+      "label": "Redux Toolkit",
+      "level": 90
+    },
+    {
+      "label": "Git / GitHub",
+      "level": 60
+    },
+    {
+      "label": "Docker",
+      "level": 65
+    },
+    {
+      "label": "Linux",
+      "level": 0
+    }
+  ],
+  "languages": [
+    {
+      "lang": "Türkçe",
+      "level": "Anadil"
+    },
+    {
+      "lang": "İngilizce",
+      "level": "B1"
+    }
+  ]
+}

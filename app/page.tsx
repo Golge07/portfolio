@@ -172,7 +172,7 @@ export default function Home() {
       <section className="px-5 md:px-8 py-16 md:py-20">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal>
-            <div className="card p-7 md:p-12 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="card p-7 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               <StatCard number="3+" label="Yıl Deneyim" />
               <StatCard number="3+" label="Tamamlanan Proje" />
               <StatCard number="3+" label="Mutlu Müşteri" />

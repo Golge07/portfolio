@@ -68,6 +68,8 @@ export default function CVPage() {
   }
 
   const { personalInfo, experience, education, skills, languages } = data;
+  const cvDownloadUrl =
+    personalInfo.cvPdfUrl && personalInfo.cvPdfUrl !== "#" ? personalInfo.cvPdfUrl : "/cv.pdf";
 
   return (
     <div className="min-h-screen px-5 md:px-8 pt-32 md:pt-36 pb-28 md:pb-32">
@@ -96,9 +98,8 @@ export default function CVPage() {
             </div>
 
             <AppExternalButton
-              href={personalInfo.cvPdfUrl}
-              target="_blank"
-              rel="noreferrer"
+              href={cvDownloadUrl}
+              download
               className="self-start"
             >
               <Download size={16} /> CV İndir (PDF)

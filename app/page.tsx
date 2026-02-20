@@ -70,16 +70,6 @@ function SocialLink({ icon, href }: { icon: React.ReactNode; href: string }) {
 
 export default function Home() {
   const data = usePortfolioData();
-  if (!data) {
-    return (
-      <div className="min-h-screen px-5 md:px-10 pt-28 pb-16">
-        <div className="max-w-4xl mx-auto text-muted">Veriler yükleniyor...</div>
-      </div>
-    );
-  }
-
-  const { projects } = data;
-  const featuredProject = projects.find((project) => project.featured) ?? projects[0];
 
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -88,6 +78,17 @@ export default function Home() {
   });
   const heroY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const featuredProject = data
+    ? data.projects.find((project) => project.featured) ?? data.projects[0]
+    : undefined;
+
+  if (!data) {
+    return (
+      <div className="min-h-screen px-5 md:px-10 pt-28 pb-16">
+        <div className="max-w-4xl mx-auto text-muted">Veriler yükleniyor...</div>
+      </div>
+    );
+  }
 
   return (
     <div>

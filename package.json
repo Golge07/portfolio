@@ -10,18 +10,19 @@
     "serve:prod": "node server.js"
   },
   "dependencies": {
+    "dotenv": "^17.3.1",
+    "lucide-react": "^0.469.0",
+    "motion": "^11.15.0",
     "next": "^15.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "motion": "^11.15.0",
-    "lucide-react": "^0.469.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0"
+    "typescript": "^5"
   }
 }

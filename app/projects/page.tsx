@@ -96,24 +96,29 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 export default function ProjectsPage() {
   const data = usePortfolioData();
   const [active, setActive] = useState("Tümü");
-
-  if (!data) {
-    return (
-      <div className="min-h-screen px-5 md:px-8 pt-32 md:pt-36 pb-28 md:pb-32">
-        <div className="max-w-5xl mx-auto text-muted">Veriler yükleniyor...</div>
-      </div>
-    );
-  }
-
-  const { personalInfo, projects, projectFilters } = data;
+  const personalInfo = data?.personalInfo;
+  const projects = data?.projects ?? [];
+  const projectFilters = data?.projectFilters ?? [];
 
   useEffect(() => {
+    if (projectFilters.length === 0) {
+      return;
+    }
+
     if (!projectFilters.some((category) => category === active)) {
       setActive(projectFilters[0] ?? "Tümü");
     }
   }, [active, projectFilters]);
 
   const filtered = active === "Tümü" ? projects : projects.filter((project) => project.category === active);
+
+  if (!data || !personalInfo) {
+    return (
+      <div className="min-h-screen px-5 md:px-8 pt-32 md:pt-36 pb-28 md:pb-32">
+        <div className="max-w-5xl mx-auto text-muted">Veriler yükleniyor...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen px-5 md:px-8 pt-32 md:pt-36 pb-28 md:pb-32">
